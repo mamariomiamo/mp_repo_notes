@@ -89,7 +89,7 @@ Since LSC requires obstacles/ other agents' trajectories. Following snippet is u
 **```setObsPrevTrajs(obs_prev_trajs)```** is then called to create a vector of traj_t object which will be used to set **```obs_pred_trajs```** and for LSC generation.
 
 **NOTE**
-You may wonder why when number of agents increase, the simulation slows down significantly. This is because the implementation of the currrent algorithm uses this node to update states for all agents using a **FOOR LOOP**.
+You may wonder why when number of agents increase, the simulation slows down significantly. This is because the implementation of the currrent algorithm uses this node to update states for all agents using a **FOR LOOP**.
 
 ```
         // Compute ideal state of agents
